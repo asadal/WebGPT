@@ -5,8 +5,7 @@ from transformers import GPT2LMHeadModel
 
 def load_pretrained_gpt_model(model_type):
     print(f"Loading weights from pretrained GPT model: {model_type}")
-    model_hf = GPT2LMHeadModel.from_pretrained(model_type)
-    return model_hf
+    return GPT2LMHeadModel.from_pretrained(model_type)
 
 
 def export_weights_to_files(model, folder_name):
